@@ -65,7 +65,7 @@ before do
 	@show_hit_or_stay = true
 end
 
-get '/home' do
+get '/' do
 	if session[:player_name]
 		redirect '/game'
 	else
