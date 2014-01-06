@@ -1,5 +1,8 @@
-<h3>Make a bet for this hand of blackjack.</h3>
-<p><%= session[:player_name] %>, you have $<%= session[:player_pot].to_i %> available.</p>
+<h3>Welcome to BlackJack, <%= session[:player_name] %>!</h3>
+<p>To play the game you must first make a bet.</p>
+<p>You currently have $<%= session[:player_pot].to_i %> available with which to bet.</p>
+<p>Once you press the "Make a Bet" button below, the first hand will be dealt.</p>
+<p>Please place a bet for your first hand of blackjack.</p>
 <form action='bet' method='post'>
 	<input type="text" name="bet_amount"/>
 	<br/>
